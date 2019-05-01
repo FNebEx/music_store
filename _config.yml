@@ -16,6 +16,21 @@ plugins:
 collections:
   albums:
     output: true
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "albums"
+      permalink: /:collection/:name
+    values:
+      layout: "item_page"
+      price: 9
+      sold_out: false
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
