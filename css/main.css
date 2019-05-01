@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 /* 4daff9 */
 
 :root{
-  --brand-color: #4daff9;
+  --brand-color: #3e8cc7;
+  --brand-color-hover: #2e6995;
 }
 
 .site {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #393E41;
   background-color: #ffffff;
 }
@@ -28,4 +29,16 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.btn-primary {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+  /* on hover: darker color of the brand color */
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-color-hover);
+  border-color: var(--brand-color-hover);
+  /* on hover: darker color of the brand color */
 }
