@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* 4daff9 */
+
+:root{
+  --brand-color: #4daff9;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  color: #393E41;
+  background-color: #ffffff;
+}
+
+.site-content {
+  flex: 1; 
+}
+
+header, footer {
+  background-color: var(--brand-color);
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
