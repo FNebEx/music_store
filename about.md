@@ -1,7 +1,7 @@
 ---
-layout: default
 title: About
-permalink: /about/
+permalink: "/about/"
+layout: default
 ---
 
 <h1 class="mt-3">About</h1>
