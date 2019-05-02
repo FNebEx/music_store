@@ -24,7 +24,13 @@
             <div class="item-info">
               <h3>{{ page.title }}</h3>
               <h4>{{ page.artist }}</h4>
-              <h4>{{ page.price | prepend: "$" | append: ".00" }} USD</h4>
+
+              {% if page.sale_price %}
+                <h5><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign mr-3"></i>ON SALE! <i class="fas fa-dollar-sign ml-3"></i><i class="fas fa-dollar-sign"></i></h5>
+                <h4>{{ page.sale_price | prepend: "$" | append: ".00" }} USD</h4>
+              {% else %}
+                <h4>{{ page.price | prepend: "$" | append: ".00" }} USD</h4>  
+              {% endif %}
             </div>
 
             <div class="item-content">
@@ -35,9 +41,9 @@
               {% if page.sold_out == true %}
                 <button class="btn btn-primary" disabled>Sold Out</button>
               {% else %}  
-                <button class="btn btn-primary">Add to Cart</button>
+                <button class="btn btn-primary">Add to Cart <i class="fas fa-plus ml-3"></i></button>
               {% endif %}
-              <button class="btn btn-primary">Checkout</button>
+              <button class="btn btn-primary">Checkout <i class="fas fa-shopping-cart ml-3"></i></button>
             </div>
         </section>
       </div>
