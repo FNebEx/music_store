@@ -16,7 +16,7 @@
       <div class="row mt-4 mb-4 test">
         <!-- album cover -->
         <section class="col-lg-6">
-          <img src='https://via.placeholder.com/400/000000/FFFFFF/?text={{ page.title | replace: " ", "+"}}' alt="" class="img-fluid cover">
+          <img src="{{ page.cover_art }}" alt="" class="img-fluid cover">
         </section>
 
         <!-- checkout -->
@@ -41,18 +41,37 @@
               {% if page.sold_out == true %}
                 <button class="btn btn-primary" disabled>Sold Out</button>
               {% else %}  
-                <button class="btn btn-primary">Add to Cart <i class="fas fa-plus ml-3"></i></button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add to Cart <i class="fas fa-plus ml-3"></i></button>
               {% endif %}
               <button class="btn btn-primary">Checkout <i class="fas fa-shopping-cart ml-3"></i></button>
             </div>
         </section>
       </div>
 
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Item Added! <i class="far fa-grin-alt"></i></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                  <i class="fas fa-times"></i>
+                </span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>{{ page.title }} has been added to your cart.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-      I am in the footer
-    </footer>
+    {% include footer.html %}
   </body>
   {% include js.html %}
 </html>
