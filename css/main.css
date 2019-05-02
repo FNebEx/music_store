@@ -29,8 +29,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: url('https://source.unsplash.com/bXjqPckmLD8') center center no-repeat;
+  background-size: cover;
 }
 
+footer {
+  color: white;
+  text-align: center;
+}
 .btn-primary {
   background-color: var(--brand-color);
   border-color: var(--brand-color);
@@ -47,16 +53,11 @@ header {
   width: 100%;
 }
 
-/* .test {
-  border: 1px solid black;
-  height: 100%;
-} */
+a.snipcart-checkout {
+  color: #000000;
+}
 
-/* .items {
-  border: 1px solid black;
+textarea {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
+  resize: none;
+}
