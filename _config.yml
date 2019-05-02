@@ -1,13 +1,16 @@
 title: Your awesome title
 email: your-email@example.com
-description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: ""
 url: ""
+
 twitter_username: jekyllrb
 github_username:  jekyll
+name: Kevin F. Grant Jr. 
+github: FNebEx
+
+# API Key's
+snipcart: ZmRhMGM3ZTctM2YwNS00ZmUwLWIzMTYtNjhiNjBlMzNmY2FlNjM2OTI0MDk4MzQ4NTQ1ODYx
+formsapi: might not even use.
 
 markdown: kramdown
 plugins:
