@@ -50,7 +50,8 @@
                 data-item-image="{{ page.cover_art }}"
                 data-item-price="{{ page.price | append: '.00'}}"
                 data-item-custom1-name="Format"
-                data-item-custom1-options="Cassette|CD|Vinyl"
+                data-item-custom1-options="Cassette|CD[+3.00]|Vinyl[+9.00]"
+                data-item-custom1-value="Cassette"
                 data-item-url="{{ site.url }}{{ page.url | append: '.html'}}"
                 >Add to Cart <i class="fas fa-plus ml-3"></i></button>
               {% endif %}
