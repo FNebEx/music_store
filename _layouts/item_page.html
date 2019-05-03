@@ -22,15 +22,15 @@
         <!-- checkout -->
         <section class="col-lg-6 items">
             <div class="item-info">
-              <h3>{{ page.title }}</h3>
-              <h4>{{ page.artist }}</h4>
-              <h4>{{ page.release_date }}</h4>
+              <h4>{{ page.title }}</h4>
+              <h3>{{ page.artist }}</h3>
+              <h3>{{ page.release_date }}</h3>
 
               {% if page.sale_price %}
-                <h5><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign mr-3"></i>ON SALE! <i class="fas fa-dollar-sign ml-3"></i><i class="fas fa-dollar-sign"></i></h5>
-                <h4>{{ page.sale_price | prepend: "$" | append: ".00" }} USD</h4>
+                <h3><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign mr-3"></i>ON SALE! <i class="fas fa-dollar-sign ml-3"></i><i class="fas fa-dollar-sign"></i></h3>
+                <h3>{{ page.sale_price | prepend: "$" | append: ".00" }} USD</h3>
               {% else %}
-                <h4>{{ page.price | prepend: "$" | append: ".00" }} USD</h4>  
+                <h3>{{ page.price | prepend: "$" | append: ".00" }} USD</h3>  
               {% endif %}
             </div>
 
