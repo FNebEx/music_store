@@ -45,7 +45,7 @@
                 <button class="btn btn-primary snipcart-add-item" 
                 data-toggle="modal" 
                 data-target="#exampleModal"
-                data-item-id="{{ page.id | prepend: "SCR-"}}"
+                data-item-id="{{ page.album_id | prepend: "SCR-"}}"
                 data-item-name="{{ page.title }}"
                 data-item-image="{{ page.cover_art }}"
                 data-item-price="{{ page.price | append: '.00'}}"
@@ -57,7 +57,7 @@
               {% endif %}
               <button class="btn btn-primary snipcart-checkout">Checkout <i class="fas fa-shopping-cart ml-3"></i></button>
             </div>
-            {{ page.id }}
+            {{ page.album_id }}
         </section>
       </div>
 
