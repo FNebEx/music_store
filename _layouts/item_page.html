@@ -45,7 +45,7 @@
                 <button class="btn btn-primary snipcart-add-item" 
                 data-toggle="modal" 
                 data-target="#exampleModal"
-                data-item-id="{{ page.id }}"
+                data-item-id="{{ page.id | prepend: "SCR-"}}"
                 data-item-name="{{ page.title }}"
                 data-item-image="{{ page.cover_art }}"
                 data-item-price="{{ page.price | append: '.00'}}"
