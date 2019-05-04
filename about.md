@@ -13,4 +13,9 @@ For my final project, I decided to make a webstore using open source technology,
 #### Front-End and Build tools
 For the front-end, I used <a href='https://jekyllrb.com/'>Jekyll</a> to actually create the site, <a href='https://getbootstrap.com/'>Bootstrap</a> for quick styling, and <a href='https://fontawesome.com/'>Font Awesome</a> for icons. 
 
-Jekyll was developed by one of the creators of GitHub and is one of the most popular static site generators. It is (kind of) a <a href='https://www.cmscritic.com/flat-file-cms/'>flat file CMS</a>, meaing that instead of storing data and content in a database, it is instead stored on a file, and when the site is built (compiled), contents in the file get turned into HTML. 
+Jekyll was developed by one of the creators of GitHub and is one of the most popular static site generators. It is (kind of) a <a href='https://www.cmscritic.com/flat-file-cms/'>flat file CMS</a>, meaing that instead of storing data and content in a database, it is instead stored on a file, and when the site is built (compiled), contents in the file get turned into HTML. The benefit of this is that since there is no database to query, load times are faster. Plus, there nothing to compromise. So there's some built in security. 
+
+```javascript
+let s = document.getElementById('el');
+s.onload = () => alert(1);
+```
