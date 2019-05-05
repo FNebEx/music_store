@@ -36,6 +36,7 @@ header {
 footer {
   color: white;
   text-align: center;
+  padding: 0 10%;
 }
 .btn-primary {
   background-color: var(--brand-color);
